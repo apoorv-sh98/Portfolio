@@ -1,14 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import './style.css';
-import Home from "../src/components/Home"
-import NavBar from "../src/components/NavBar"
-import Projects from "../src/components/Projects"
-import WorkEx from "../src/components/WorkEx"
-import Blog from "../src/components/Blog"
-import BucketList from "../src/components/BucketList"
-import Resume from "../src/components/Resume"
-import Footer from "../src/components/Footer"
+import Home from "./components/Home/Home"
+import NavBar from "./components/NavBar"
+import Projects from "./components/Projects/Projects"
+import WorkEx from "./components/WorkEx/WorkEx"
+import Blog from "./components/Blog/Blog"
+import BucketList from "./components/BucketList"
+import Resume from "./components/Resume/Resume"
+import Footer from "./components/Footer"
 import ScrollToTop from "./components/ScrollToTop";
 
 import {
