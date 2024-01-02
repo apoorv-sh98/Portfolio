@@ -19,12 +19,12 @@ import {
 } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <div className="App">
-        <ScrollToTop />
         <NavBar />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Projects" element={<Projects />} />

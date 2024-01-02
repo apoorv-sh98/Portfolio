@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(245, 245, 245);
+  /* background-image: url("./components/images/background.jpg"); */
+  backdrop-filter: blur(1px);
 }
 
 code {

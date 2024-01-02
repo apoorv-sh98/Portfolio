@@ -1,83 +1,143 @@
+#background{
+    width: 100vw;
+    /* min-height: 100vh; */
+    /* background-color: transparent; */
+}
+@font-face {
+    font-family: montserrat-light;
+    src: url('../Montserrat/static/Montserrat-Light.ttf');
+}
+@font-face {
+    font-family: montserrat-Thin;
+    src: url('../Montserrat/static/Montserrat-Thin.ttf');
+}
+@font-face {
+    font-family: montserrat-Bold;
+    src: url('../Montserrat/static/Montserrat-Bold.ttf');
+}
 /*  Home page */
 .name-element{
-    background-color: black;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    /* background-color: transparent; */
 }
 
+.home_style{
+    padding-top: 80px !important;
+    min-width: 100vw;
+    min-height: 100vh;
+}
 .heading{
-    color: whitesmoke;
-    padding-top: 10px;
+    color: black;
+    padding-top: 25px;
     padding-left: 75px;
     text-align: left;
-    font-weight: 300;
-    font-size: 18px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    font-family: montserrat-light;
 }
 .header-name{
-    color: white;
+    color: black;
     padding-left: 75px;
     text-align: left;
-    font-weight: 500;
-    font-size: 38px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    font-family: montserrat-light;
 }
 
-.header{
-    background-color: black;
+.navbar{
+    /* background-color: transparent; */
+    height: 7vh;
     display: flex;
     align-items: center;
-    position: sticky;
-    top: 0;
+    padding-left: 10px;
+    /* position: fixed; */
+    top: 0px;
     z-index: 100;
+    color: black;
+    font-family: montserrat-light;
+    /* flex: auto; */
+    background-color: transparent;
+    box-shadow: 0 0 5px #909792;
+    backdrop-filter: blur(2px) 
+    /* opacity: 0.2; */
 }
+.nav_name{
+    font-size: 18px;
+    width: 650vw;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: montserrat-light;
+}
+.nav_text{
+    font-size: 14px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .header__logo{
     width: 175px;
     margin: 0 20px;
     margin-top: 18px;
     object-fit: contain;
     font-family:fantasy;
-    color: whitesmoke;
+    color: black;
 }
 .header__search{
     display: flex;
     flex: 1;
 }
-.header__searchIcon{
-    background-color: #cd9042;
-    padding: 5px;
-    height: 22px !important;
+
+/* Footer */
+.social_links{
+    justify-content: center !important;
+    padding-top: 15px !important;
+    display: inline-block !important;
+    position: relative !important;
+    padding-inline-start: 0 !important;
 }
-.header__searchInput{
-    height: 12px;
-    padding: 10px;
-    border: none;
-    width: 100%;
-}
-.headerNav{
-    display: flex;
-    justify-content: space-evenly;
-}
-.header__link{
-    color: white;
-    text-decoration: none;
-}
-.header__option{
-    display: flex;
-    flex-direction: column;
-    margin: 0 10px;
-}
-.header__optionLineOne{
-    font-size: 10px;
-}
-.header__optionLineTwo{
-    font-size: 13px;
-    font-weight: 800;
-}
-.header__optionBasket{
-    display: flex;
+.social_icon{
+    display: inline-block !important;
+    padding-right: 10px;
+    padding-left: 10px;
     align-items: center;
 }
-.header__basketCount{
-    margin: 0 10px;
+.home-social-icons {
+    position: relative !important;
+    display: inline-block !important;
+    width: 21px !important;
+    height: 21px !important;
+    align-items: center !important;
+    font-size: 1.2em !important;
+    line-height: 2em !important;
+    background: transparent !important;
+    border-radius: 50% !important;
+    transition: 0.5s !important;
+    scale: 1.8;
+}
+.icon-colour {
+    color: #1c1b1d !important;
+}
+.home-social-icons:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #21472e;
+}
+
+.home-social-icons:hover {
+    color: #207525;
+    box-shadow: 0 0 5px #21472e;
+    text-shadow: 0 0 2px #21472e;
+}
+.footer{
+    font-size: 10px;
+    /* background-color: transparent; */
+    color: black;
+    font-family: montserrat-light;
+    position: absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    display: flex;
+    flex-direction: column;
+}
+.footer_text{
+    color: black;
 }

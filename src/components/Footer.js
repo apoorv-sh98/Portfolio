@@ -1,8 +1,56 @@
-function Footer() {
+import { Copyright } from "@mui/icons-material";
+import { Container, Col, Row } from "react-bootstrap";
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+
+const Footer = () => {
+    let date = new Date();
+    let year = date.getFullYear();
+
     return (
-        <section>
-            
-        </section>
+        <Container 
+            fluid
+            className="footer"
+            fixed="bottom"
+
+        >
+            <ul className="social_links">
+              <li className="social_icon">
+                <a
+                  href="https://github.com/apoorv-sh98"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
+              <li className="social_icon">
+                <a
+                  href="https://www.linkedin.com/in/apoorv-sh98/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
+              <li className="social_icon">
+                <a
+                  href="https://leetcode.com/apoorv-sh98/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <SiLeetcode />
+                </a>
+              </li>
+            </ul>
+            <h3 className="footer_text">
+                Copyright © {year} Apoorv Sharma
+            </h3>
+        </Container>
     )
 }
 
