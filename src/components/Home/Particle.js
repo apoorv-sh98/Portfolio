@@ -15,10 +15,10 @@ const Particle = () => {
         },
         particles: {
             number: {
-                value: 250,
+                value: 500,
                 density: {
-                enable: true,
-                value_area: 1500,
+                    enable: true,
+                    value_area: 1500,
                 },
             },
             color: {
@@ -27,7 +27,7 @@ const Particle = () => {
             shape: {
                 type: "circle",
                 stroke: {
-                width: 0,
+                width: 0.75,
                 color: "#71797E",
                 },
                 polygon: {

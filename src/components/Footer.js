@@ -23,7 +23,7 @@ const Footer = () => {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiFillGithub />
+                    <AiFillGithub />
                 </a>
               </li>
               <li className="social_icon">
@@ -33,7 +33,7 @@ const Footer = () => {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <FaLinkedinIn />
+                    <FaLinkedinIn />
                 </a>
               </li>
               <li className="social_icon">
@@ -43,7 +43,7 @@ const Footer = () => {
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <SiLeetcode />
+                    <SiLeetcode />
                 </a>
               </li>
             </ul>
