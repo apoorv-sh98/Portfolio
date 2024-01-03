@@ -20,7 +20,7 @@ function Home() {
                     <h1 className="heading">
                         I am a 
                     </h1>
-                    <div style={{ textAlign: "left", "padding-left": "75px" }}>
+                    <div style={{ textAlign: "left", "padding-left": "75px", fontSize: "28px" }}>
                         <Interests/>
                     </div>
                 </div>
