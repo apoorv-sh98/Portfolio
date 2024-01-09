@@ -15,130 +15,111 @@
     font-family: montserrat-Bold;
     src: url('../Montserrat/static/Montserrat-Bold.ttf');
 }
+@font-face {
+    font-family: montserrat-SemiBoldItalic;
+    src: url('../Montserrat/static/Montserrat-SemiBoldItalic.ttf');
+}
 /*  Home page */
 .name-element{
     /* background-color: transparent; */
 }
 
-.home_style{
-    padding-top: 80px !important;
-    min-width: 100vw;
-    min-height: 100vh;
-}
-.heading{
+h1 {
     color: black;
-    padding-top: 25px;
-    padding-left: 75px;
-    text-align: left;
-    font-size: 32px;
-    font-family: montserrat-light;
-}
-.header-name{
-    color: black;
-    padding-left: 75px;
-    text-align: left;
-    font-size: 56px;
-    font-family: montserrat-light;
 }
 
-.navbar{
-    /* background-color: transparent; */
-    height: 7vh;
+a {
+    text-decoration: none;
+}
+
+p {
+    justify-content: left;
+    text-align: justify;
+    align-items: left;
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.about {
+    padding-right: 20px;
     display: flex;
-    align-items: center;
-    padding-left: 10px;
-    /* position: fixed; */
-    top: 0px;
+    padding-top: 10vh;
+    justify-content: center;
+    height: 90vh;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: "Fira Code", monospace;
+    text-align: justify;
+}
+.about__heading{
+    text-align: center;
+    font-size: 50px;
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.about__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__headshot {
+    border-radius: 50px;
+    border: 5px solid gray;
+    box-shadow: black 0px 20px 30px -10px;
     z-index: 100;
-    color: black;
-    font-family: montserrat-light;
-    /* flex: auto; */
-    background-color: transparent;
-    box-shadow: 0 0 5px #909792;
-    backdrop-filter: blur(2px) 
-    /* opacity: 0.2; */
 }
-.nav_name{
-    font-size: 22px;
-    width: 650vw;
-    text-align: left;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: montserrat-light;
+
+.about__body {
+    font-family: "Fira Code", monospace;
+    max-width: 50vw;
+    padding-right: 50px;
 }
-.nav_text{
-    font-size: 18px;
-    text-align: left;
-    padding-left: 10px;
-    padding-right: 10px;
+
+.about__specialText {
+    font-weight: bold;
 }
+
+.about__externLink {
+    color: var(--purple);
+}
+@media only screen and (max-width: 768px) {
+    .about {
+        padding-top: 10vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__heading {
+        font-size: 50px;
+    }
+
+    .about__text {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .about__body {
+        padding-right: 0;
+        max-width: 60vw;
+        padding-bottom: 15px;
+    }
+
+    .about__headshot {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 15vh;
+        margin-top: 15px;
+    }
+}
+
 
 .header__logo{
     width: 175px;
     margin: 0 20px;
     margin-top: 18px;
     object-fit: contain;
-    font-family:fantasy;
     color: black;
 }
 .header__search{
     display: flex;
     flex: 1;
-}
-
-/* Footer */
-.social_links{
-    justify-content: center !important;
-    padding-top: 15px !important;
-    display: inline-block !important;
-    position: relative !important;
-    padding-inline-start: 0 !important;
-}
-.social_icon{
-    display: inline-block !important;
-    padding-right: 25px;
-    padding-left: 25px;
-    align-items: center;
-}
-.home-social-icons {
-    position: relative !important;
-    display: inline-block !important;
-    width: 24px !important;
-    height: 24px !important;
-    align-items: center !important;
-    font-size: 1.2em !important;
-    line-height: 2em !important;
-    background: transparent !important;
-    border-radius: 50% !important;
-    transition: 0.5s !important;
-    scale: 3;
-}
-.icon-colour {
-    color: #1c1b1d !important;
-}
-.home-social-icons:hover::before {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #21472e;
-}
-
-.home-social-icons:hover {
-    color: #207525;
-    transform: scale(1.2);
-    box-shadow: 0 0 5px #21472e;
-    text-shadow: 0 0 2px #21472e;
-}
-.footer{
-    font-size: 10px;
-    /* background-color: transparent; */
-    color: black;
-    font-family: montserrat-light;
-    position: absolute;
-    left:0;
-    bottom:0;
-    right:0;
-    display: flex;
-    flex-direction: column;
-}
-.footer_text{
-    color: black;
 }

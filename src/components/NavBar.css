@@ -1,0 +1,57 @@
+
+.navbar{
+    /* background-color: transparent; */
+    position: fixed;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    /* padding-left: 10px; */
+    /* position: fixed; */
+    top: 0px;
+    z-index: 100;
+    color: black;
+    font-family: "Fira Code", monospace;
+    /* flex: auto; */
+    background-color: transparent;
+    box-shadow: 0 5px 5px 0 #909792;
+    backdrop-filter: blur(2px);
+    /* flex-direction: column; */
+    /* display: inline-block !important; */
+    /* opacity: 0.2; */
+}
+.nav{
+    font-size: 20px;
+    /* background-color: transparent; */
+    color: black;
+    font-family: montserrat-light;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: transparent;
+    box-shadow: 0 5px 5px 0 #909792;
+    backdrop-filter: blur(2px);
+}
+.nav_headings{
+    display: flex;
+    text-align: center;
+}
+.nav_name{
+    color: #000000;
+    font-size: 22px;
+    width: 20;
+    text-align: left;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    font-family: montserrat-light;
+    left: 0px;
+    top: 0px;
+}
+.nav_items{
+    color: black;
+}
+.nav_text{
+    color: #000000;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}

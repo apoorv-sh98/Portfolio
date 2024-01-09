@@ -1,8 +1,10 @@
+import { Container } from "react-bootstrap"
+
 function WorkEx() {
     return (
-        <section>
+        <Container className="home_style">
             
-        </section>
+        </Container>
     )
 }
 

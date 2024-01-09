@@ -1,16 +1,43 @@
 import React, { useState} from 'react';
+import "./NavBar.css"
+
 
 const NavBar = () => {
     return (
         <div 
-            className='navbar'
+            className="nav"
             fixed="top"
-        >
-            <h2 className='nav_name'>Apoorv Sharma</h2>
-            <h2 className='nav_text'>Projects</h2>
-            <h2 className='nav_text'>WorkEx</h2>
-            <h2 className='nav_text'>Resume</h2>
 
+        >
+            <div className="nav_headings">
+              <div className="nav_items">
+                <a
+                  href="./Projects"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                    <h2 className='nav_text'>PROJECTS</h2>
+                </a>
+              </div>
+              <div className="nav_items">
+                <a
+                  href="./workEx"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                    <h2 className='nav_text'>WORK-EX</h2>
+                </a>
+              </div>
+              <div className="nav_items">
+                <a
+                  href="./Resume"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                    <h2 className='nav_text'>RESUME</h2>
+                </a>
+              </div>
+            </div>
         </div>
     );
 }

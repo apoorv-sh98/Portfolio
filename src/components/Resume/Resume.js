@@ -1,8 +1,10 @@
+import { Container } from "react-bootstrap"
+
 function Resume() {
     return (
-        <section>
+        <Container className="home_style">
             
-        </section>
+        </Container>
     )
 }
 

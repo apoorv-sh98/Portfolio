@@ -10,6 +10,7 @@ import BucketList from "./components/BucketList"
 import Resume from "./components/Resume/Resume"
 import Footer from "./components/Footer"
 import ScrollToTop from "./components/ScrollToTop";
+import Particle from "./components/Home/Particle";
 
 import {
   BrowserRouter as Router,
@@ -23,6 +24,7 @@ const App = () => {
   return (
     <Router>
       <div className="App">
+        <Particle />
         <NavBar />
         <ScrollToTop />
         <Routes>

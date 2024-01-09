@@ -1,8 +1,10 @@
+import { Container } from "react-bootstrap"
+
 function Projects() {
     return (
-        <section>
-            
-        </section>
+        <Container className="home_style">
+
+        </Container>
     )
 }
 

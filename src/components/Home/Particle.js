@@ -7,39 +7,39 @@ const Particle = () => {
       id="tsparticles"
       params={{
         background: {
-            color: "#ffffff",
+            color: "transparent",
         },
         fullScreen: {
             enable: true,
-            zIndex: -1,
+            zIndex: 0,
         },
         particles: {
             number: {
-                value: 500,
+                value: 50,
                 density: {
                     enable: true,
                     value_area: 1500,
                 },
             },
             color: {
-                value: "#71797E",
+                value: ["#bbbbbb", "#cddeff"],
             },
             shape: {
-                type: "circle",
+                type: "polygon",
                 stroke: {
-                width: 0.75,
-                color: "#71797E",
+                  width: 1,
+                  color: ["#bbbbbb", "#cddeff"],
                 },
                 polygon: {
-                nb_sides: 5,
+                  nb_sides: 5,
                 },
             },
             line_linked: {
-                enable: true,
+                enable: false,
                 distance: 150,
-                color: "#D3D3D3",
+                color: ["#000000", "#cddeff"],
                 opacity: 0.4,
-                width: 1,
+                width: 0.5,
             },
             move: {
                 enable: true,
@@ -51,13 +51,13 @@ const Particle = () => {
                 bounce: true,
             },
             size: {
-                value: 1,
+                value: 10,
             },
             opacity: {
                 anim: {
                     enable: true,
-                    speed: 1,
-                    opacity_min: 0.05,
+                    speed: 5,
+                    opacity_min: 0.8,
                 },
             },
         },
@@ -65,13 +65,20 @@ const Particle = () => {
           events: {
             onclick: {
               enable: true,
-              mode: "push",
+              mode: "pull",
             },
+            onhover: {
+              enable: false,
+              mode: "grab",
+            }
           },
           modes: {
-            push: {
-              particles_nb: 1,
+            pull: {
+              particles_nb: 100,
             },
+            grab:{
+              distance: 400,
+            }
           },
         },
         retina_detect: true,
