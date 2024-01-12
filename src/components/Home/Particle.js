@@ -57,7 +57,7 @@ const Particle = () => {
                 anim: {
                     enable: true,
                     speed: 5,
-                    opacity_min: 0.8,
+                    opacity_min: 0.6,
                 },
             },
         },

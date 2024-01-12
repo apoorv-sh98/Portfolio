@@ -5,10 +5,10 @@ const Interests = () =>{
         <Typewriter
             options={{
                 strings: [
-                "Software Developer.",
-                "Backend Engineer.",
-                "DSA enthusiast.",
-                "Space enthusiast."
+                "System Architecture Design.",
+                "Backend Engineering.",
+                "Problem Solving.",
+                "Astronomy."
                 ],
                 autoStart: true,
                 loop: true,
@@ -17,5 +17,9 @@ const Interests = () =>{
         />
     );
 }
+// System Architecture Design
+// Backend Engineering
+// Problem Solving
+// Astronomics
 
 export default Interests

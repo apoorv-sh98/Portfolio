@@ -49,7 +49,7 @@ const Footer = () => {
               </li>
             </ul>
             <h3 className="footer_text">
-                Copyright © {year} Apoorv Sharma
+                © {year} Apoorv Sharma. All rights reserved.
             </h3>
         </Container>
     )

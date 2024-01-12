@@ -41,16 +41,18 @@
     /* text-shadow: 0 0 2px #21472e; */
 }
 .footer{
+    padding-top: 25px;
+    padding-bottom: 10px;
     font-size: 10px;
     /* background-color: transparent; */
     color: black;
     font-family: montserrat-light;
-    position: absolute;
+    /* position: absolute; */
     left:0;
     bottom:0;
     right:0;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 .footer_text{
     color: black;

@@ -1,13 +1,13 @@
 
 .navbar{
     /* background-color: transparent; */
-    position: fixed;
-    height: 10vh;
     display: flex;
     align-items: center;
+    /* justify-content: center; */
     /* padding-left: 10px; */
-    /* position: fixed; */
-    top: 0px;
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
     z-index: 100;
     color: black;
     font-family: "Fira Code", monospace;
@@ -19,17 +19,24 @@
     /* display: inline-block !important; */
     /* opacity: 0.2; */
 }
+.nav_logo {
+    padding-left: 15px;
+    width: 120px;
+    width: 10%
+}
 .nav{
+    /* background-color: black; */
     font-size: 20px;
     /* background-color: transparent; */
     color: black;
     font-family: montserrat-light;
     display: flex;
-    align-items: center;
+    align-items: right;
     justify-content: right;
-    background-color: transparent;
+    width: 90%;
+    /* background-color: transparent;
     box-shadow: 0 5px 5px 0 #909792;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px); */
 }
 .nav_headings{
     display: flex;

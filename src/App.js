@@ -2,9 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import './style.css';
 import Home from "./components/Home/Home"
-import NavBar from "./components/NavBar"
+import NavBar from "./components/NavBar/NavBar"
 import Projects from "./components/Projects/Projects"
-import WorkEx from "./components/WorkEx/WorkEx"
+import Timeline from "./components/Timeline/Timeline"
 import Blog from "./components/Blog/Blog"
 import BucketList from "./components/BucketList"
 import Resume from "./components/Resume/Resume"
@@ -30,7 +30,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Projects" element={<Projects />} />
-          <Route path="/workEx" element={<WorkEx />} />
+          <Route path="/Timeline" element={<Timeline />} />
           <Route path="/Blog" element={<Blog />} />
           <Route path="/bucketList2024" element={<BucketList />} />
           <Route path="/Resume" element={<Resume />} />
