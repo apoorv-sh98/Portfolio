@@ -12,12 +12,12 @@ const About = () => {
                 <div data-aos="fade-right" className="about__text">
                     <h2 className="about__heading">About Me</h2>
                     <p className="about__body">
-                    Hello, My name is Apoorv Sharma and I am a recent graduate of masters in Computer Science from{" "}
+                    Hello, My name is Apoorv Sharma and I am a recent graduate of masters in Computer Science from the{" "}
                     <span className="about__specialText">University of Rochester</span>.
                     <br />
-                    I have previously interned at{" "}
-                    <span className="about__specialText">DnG Analytics Inc.</span> as a Software Engineer Intern in the fall and summer of 2023, and
-                    have worked as a full-time Software Developer at <span className="about__specialText">Amdocs Development Center India</span> for about 2 years.
+                    I have previously interned with{" "}
+                    <span className="about__specialText">DnG Analytics Inc.</span> as a Software Engineer in the fall and summer of 2023, and
+                    have worked as a full-time Software Developer at <span className="about__specialText">Amdocs Development Center, India</span> for about 2 years.
                     <br /> <br />
                     I have a passion for software security and an unwavering commitment to optimize systems.
                     <br /> <br /> Currently, I am expanding my skills by learning about{" "}

@@ -21,6 +21,8 @@
 .resume_window {
     width: 90%; /* Adjust this based on how wide you want the PDF to be */
     max-width: 1000px; /* Max width for larger screens */
+    height: 90%;
+    max-height: 1500px;
     margin: auto; /* This will take care of center alignment */
     overflow: hidden;
     padding-right: 15px; 

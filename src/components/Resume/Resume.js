@@ -10,7 +10,7 @@ import { Height } from "@mui/icons-material";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 
-function Resume() {
+const Resume = () => {
     const [width, setWidth] = useState(1200);
 
     useEffect(() => {

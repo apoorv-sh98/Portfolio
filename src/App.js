@@ -26,7 +26,7 @@ const App = () => {
       <div className="App">
         <Particle />
         <NavBar />
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Projects" element={<Projects />} />
@@ -34,7 +34,7 @@ const App = () => {
           <Route path="/Blog" element={<Blog />} />
           <Route path="/bucketList2024" element={<BucketList />} />
           <Route path="/Resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="/*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
       </div>
