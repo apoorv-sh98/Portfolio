@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { FiCamera, FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { FiCamera, FiX, FiChevronLeft, FiChevronRight, FiMapPin } from "react-icons/fi";
 import type { Photo } from "@/lib/photos";
 
 const gradients = [
@@ -139,8 +139,8 @@ export function PhotoGallery({ photos }: { photos: Photo[] }) {
               height={filtered[lightbox].height ?? 1200}
               className="max-h-[85vh] w-auto rounded-lg object-contain"
             />
-            <figcaption className="mt-3 text-center text-sm text-white/70">
-              {filtered[lightbox].alt} · {filtered[lightbox].city}
+            <figcaption className="mt-3 flex items-center justify-center gap-1.5 text-center text-sm text-white/70">
+              <FiMapPin size={13} /> {filtered[lightbox].alt}
             </figcaption>
           </figure>
         </div>
@@ -163,15 +163,21 @@ function PhotoTile({
       <button
         type="button"
         onClick={onOpen}
-        className="group mb-4 block w-full break-inside-avoid overflow-hidden rounded-xl border border-border"
+        className="group mb-4 block w-full break-inside-avoid overflow-hidden rounded-xl border border-border bg-surface text-left transition-colors hover:border-accent-2"
       >
-        <Image
-          src={photo.src}
-          alt={photo.alt}
-          width={photo.width ?? 800}
-          height={photo.height ?? 1000}
-          className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-        />
+        <div className="overflow-hidden">
+          <Image
+            src={photo.src}
+            alt={photo.alt}
+            width={photo.width ?? 800}
+            height={photo.height ?? 1000}
+            className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+          />
+        </div>
+        <span className="flex items-center gap-1.5 px-3 py-2.5 text-xs text-muted">
+          <FiMapPin size={12} className="shrink-0 text-accent-2" />
+          {photo.alt}
+        </span>
       </button>
     );
   }
