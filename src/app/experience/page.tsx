@@ -1,83 +1,96 @@
 import type { Metadata } from "next";
 import { Section, SectionHeading } from "@/components/ui/Section";
+import { Button } from "@/components/ui/Button";
+import { FiDownload } from "react-icons/fi";
+import { workExperience, education, skills, type Job } from "@/lib/experience";
 
 export const metadata: Metadata = { title: "Experience" };
-
-type Item = {
-  role: string;
-  org: string;
-  period: string;
-  location?: string;
-  points: string[];
-  kind: "work" | "education";
-};
-
-// TODO: refine dates and bullet points with Apoorv's real details.
-const timeline: Item[] = [
-  {
-    role: "M.S. in Computer Science",
-    org: "University of Rochester",
-    period: "2022 – 2023",
-    location: "Rochester, NY",
-    kind: "education",
-    points: [
-      "Graduate coursework across systems, algorithms, and security.",
-    ],
-  },
-  {
-    role: "Software Engineer (Intern)",
-    org: "DnG Analytics Inc.",
-    period: "2023",
-    kind: "work",
-    points: [
-      "Built and shipped software features as a Software Engineer.",
-    ],
-  },
-  {
-    role: "Software Developer",
-    org: "Amdocs Development Center, India",
-    period: "~2 years",
-    kind: "work",
-    points: [
-      "Developed and maintained production software full-time for ~2 years.",
-    ],
-  },
-];
 
 export default function ExperiencePage() {
   return (
     <Section>
-      <SectionHeading
-        eyebrow="Experience"
-        title="Where I've worked & studied"
-        description="A timeline of my professional and academic journey. (Details are being refined.)"
-      />
+      <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
+        <SectionHeading
+          eyebrow="Experience"
+          title="Where I've worked & studied"
+        />
+        <Button href="/resume/ApoorvSharma_Resume.pdf" variant="outline" external>
+          <FiDownload /> Download CV
+        </Button>
+      </div>
+
+      {/* Work */}
       <ol className="relative border-l border-border pl-6">
-        {timeline.map((item, i) => (
-          <li key={i} className="mb-10 last:mb-0">
-            <span
-              className={`absolute -left-[7px] mt-1.5 h-3.5 w-3.5 rounded-full border-2 border-background ${
-                item.kind === "education" ? "bg-accent-2" : "bg-accent"
-              }`}
-            />
+        {workExperience.map((job, i) => (
+          <JobItem key={i} job={job} />
+        ))}
+      </ol>
+
+      {/* Education */}
+      <h3 className="mb-6 mt-16 text-2xl font-bold tracking-tight">Education</h3>
+      <ol className="relative border-l border-border pl-6">
+        {education.map((ed, i) => (
+          <li key={i} className="mb-8 last:mb-0">
+            <span className="absolute -left-[7px] mt-1.5 h-3.5 w-3.5 rounded-full border-2 border-background bg-accent-2" />
             <div className="flex flex-wrap items-baseline justify-between gap-2">
-              <h3 className="text-lg font-bold">{item.role}</h3>
+              <h4 className="text-lg font-bold">{ed.school}</h4>
               <span className="font-mono text-xs uppercase tracking-widest text-muted">
-                {item.period}
+                {ed.period}
               </span>
             </div>
-            <p className="text-sm font-medium text-accent">{item.org}</p>
-            {item.location && (
-              <p className="text-sm text-muted">{item.location}</p>
-            )}
-            <ul className="mt-3 list-disc space-y-1 pl-5 text-sm leading-relaxed text-muted">
-              {item.points.map((p, j) => (
-                <li key={j}>{p}</li>
-              ))}
-            </ul>
+            <p className="text-sm font-medium text-accent">{ed.degree}</p>
+            <p className="text-sm text-muted">{ed.location}</p>
           </li>
         ))}
       </ol>
+
+      {/* Skills */}
+      <h3 className="mb-6 mt-16 text-2xl font-bold tracking-tight">Skills</h3>
+      <div className="grid gap-6 sm:grid-cols-2">
+        {skills.map((group) => (
+          <div key={group.category}>
+            <h4 className="mb-3 font-mono text-sm uppercase tracking-widest text-accent">
+              {group.category}
+            </h4>
+            <ul className="flex flex-wrap gap-2">
+              {group.items.map((item) => (
+                <li
+                  key={item}
+                  className="rounded-full border border-border bg-surface px-3 py-1.5 text-sm text-foreground"
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
     </Section>
+  );
+}
+
+function JobItem({ job }: { job: Job }) {
+  return (
+    <li className="mb-10 last:mb-0">
+      <span className="absolute -left-[7px] mt-1.5 h-3.5 w-3.5 rounded-full border-2 border-background bg-accent" />
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h3 className="text-lg font-bold">
+          {job.role}{" "}
+          <span className="font-normal text-muted">· {job.org}</span>
+        </h3>
+        <span className="font-mono text-xs uppercase tracking-widest text-muted">
+          {job.period}
+        </span>
+      </div>
+      <p className="text-sm text-muted">
+        {job.orgNote && <span className="italic">{job.orgNote} · </span>}
+        {job.location}
+      </p>
+      <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-muted">
+        {job.points.map((p, j) => (
+          <li key={j}>{p}</li>
+        ))}
+      </ul>
+    </li>
   );
 }
