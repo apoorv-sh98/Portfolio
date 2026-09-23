@@ -1,55 +1,28 @@
 {
-  "name": "portfolio_react",
-  "version": "0.1.0",
-  "homepage": "https://apoorv-sh98.github.io/Portfolio",
+  "name": "portfolio",
+  "version": "2.0.0",
   "private": true,
-  "dependencies": {
-    "@emotion/react": "^11.11.3",
-    "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "5.15.2",
-    "@mui/material": "^5.15.2",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "gh-pages": "^6.1.1",
-    "aos": "^2.3.4",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.2.1",
-    "react-dom": "^18.2.0",
-    "react-github-calendar": "^3.2.2",
-    "react-icons": "^4.8.0",
-    "react-router-dom": "^6.2.2",
-    "react-scripts": "5.0.1",
-    "react-tsparticles": "^1.42.2",
-    "react-pdf": "7.7.0",
-    "typewriter-effect": "^2.18.2",
-    "web-vitals": "^2.1.0"
-  },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "deploy_clean": "gh-pages-clean gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "framer-motion": "^13.4.0",
+    "next": "16.3.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-icons": "^5.7.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.5",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
