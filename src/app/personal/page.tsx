@@ -33,6 +33,7 @@ const features: Feature[] = [
     title: "Exploration",
     body: "An interactive world map — drop into a place to see everything I did there.",
     icon: FiMap,
+    href: "/personal/exploration",
   },
   {
     title: "Coffee",

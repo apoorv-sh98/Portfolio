@@ -12,7 +12,13 @@ const gradients = [
   "from-accent-2/20 to-surface-2",
 ];
 
-export function PhotoGallery({ photos }: { photos: Photo[] }) {
+export function PhotoGallery({
+  photos,
+  showFilter = true,
+}: {
+  photos: Photo[];
+  showFilter?: boolean;
+}) {
   const cities = useMemo(
     () => ["All", ...Array.from(new Set(photos.map((p) => p.city))).sort()],
     [photos],
@@ -58,6 +64,7 @@ export function PhotoGallery({ photos }: { photos: Photo[] }) {
   return (
     <div>
       {/* Filters */}
+      {showFilter && (
       <div className="mb-8 flex flex-wrap gap-2">
         {cities.map((c) => (
           <button
@@ -74,6 +81,7 @@ export function PhotoGallery({ photos }: { photos: Photo[] }) {
           </button>
         ))}
       </div>
+      )}
 
       {/* Masonry grid */}
       <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
