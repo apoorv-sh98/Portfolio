@@ -7,10 +7,11 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = { title: "About" };
 
-const nowLearning = [
-  "Frontend development with React",
-  "Auth & security with Spring Security",
-  "Event streaming with Apache Kafka",
+const focusAreas = [
+  "Distributed systems",
+  "Backend engineering",
+  "Concurrency & coroutines",
+  "Cloud (AWS)",
 ];
 
 export default function AboutPage() {
@@ -21,38 +22,41 @@ export default function AboutPage() {
           <SectionHeading eyebrow="About" title="About Me" />
           <div className="space-y-4 text-base leading-relaxed text-muted">
             <p>
-              Hello! I&apos;m Apoorv Sharma, a recent Master&apos;s graduate in
-              Computer Science from the{" "}
+              Hello! I&apos;m Apoorv Sharma, a{" "}
+              <span className="font-medium text-foreground">Software Engineer</span>{" "}
+              at{" "}
+              <span className="font-medium text-foreground">Amazon</span> in the
+              Seattle area, building and scaling backend systems.
+            </p>
+            <p>
+              Before Amazon, I built virtualized infrastructure and automation at{" "}
+              <span className="font-medium text-foreground">
+                Clairvoyant Intelligence
+              </span>{" "}
+              (formerly D&amp;G Analytics), and engineered messaging and security
+              systems for Telstra&apos;s OSS platform at{" "}
+              <span className="font-medium text-foreground">
+                Amdocs
+              </span>
+              . I hold a Master&apos;s in Computer Science from the{" "}
               <span className="font-medium text-foreground">
                 University of Rochester
               </span>
               .
             </p>
             <p>
-              I previously interned at{" "}
-              <span className="font-medium text-foreground">
-                DnG Analytics Inc.
-              </span>{" "}
-              as a Software Engineer during 2023, and worked full-time as a
-              Software Developer at{" "}
-              <span className="font-medium text-foreground">
-                Amdocs Development Center, India
-              </span>{" "}
-              for about two years.
-            </p>
-            <p>
-              I have a passion for software security and an unwavering commitment
-              to optimizing systems. Right now I&apos;m expanding into full-stack
-              development.
+              I care about reliable distributed systems, clean design, and
+              optimizing the things that matter. Outside work, I&apos;m usually
+              chasing a good pour-over or planning the next trail.
             </p>
           </div>
 
           <div className="mt-8">
             <h3 className="mb-3 font-mono text-sm uppercase tracking-widest text-accent">
-              Currently learning
+              Focus areas
             </h3>
             <ul className="flex flex-wrap gap-2">
-              {nowLearning.map((item) => (
+              {focusAreas.map((item) => (
                 <li
                   key={item}
                   className="rounded-full border border-border bg-surface px-3 py-1.5 text-sm text-foreground"

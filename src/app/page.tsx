@@ -121,12 +121,12 @@ export default function Home() {
           <div>
             <SectionHeading eyebrow="About" title="A little about me" />
             <p className="max-w-2xl text-base leading-relaxed text-muted">
-              I&apos;m a software developer and a recent Master&apos;s graduate in
-              Computer Science from the University of Rochester. I&apos;ve built
-              software full-time at Amdocs and interned at DnG Analytics, with a
-              soft spot for backend engineering, system design, and software
-              security. Outside work, I&apos;m usually chasing a good pour-over or
-              planning the next trail.
+              I&apos;m a Software Engineer at Amazon, building and scaling backend
+              systems. Before this I worked at Clairvoyant Intelligence and
+              Amdocs, and earned my Master&apos;s in Computer Science from the
+              University of Rochester. I have a soft spot for distributed systems,
+              clean design, and backend engineering. Outside work, I&apos;m usually
+              chasing a good pour-over or planning the next trail.
             </p>
             <div className="mt-6">
               <Link
