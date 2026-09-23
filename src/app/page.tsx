@@ -32,8 +32,8 @@ export default function Home() {
               {site.role}
             </p>
             <div className="mt-3 text-lg text-foreground sm:text-xl">
-              I like{" "}
-              <Typewriter words={site.interests} className="text-accent-2" />
+              Currently:{" "}
+              <Typewriter words={site.currently} className="text-accent-2" />
             </div>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted">
               {site.tagline}

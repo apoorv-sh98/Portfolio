@@ -6,16 +6,15 @@ import { HiOutlineMail } from "react-icons/hi";
 
 export const site = {
   name: "Apoorv Sharma",
-  role: "Software Engineer",
+  role: "Software Engineer & Explorer",
   email: "apoorv.sh98@gmail.com",
   tagline:
-    "I build reliable backends and thoughtful systems — and off the clock, I chase good coffee, trails, and new cities.",
-  interests: [
-    "System Architecture Design.",
-    "Backend Engineering.",
-    "Problem Solving.",
-    "Coffee & Cafés.",
-    "Astronomy.",
+    "Engineer by trade, explorer by nature — this is where the two meet.",
+  currently: [
+    "shipping backend systems",
+    "brewing better coffee",
+    "planning the next hike",
+    "exploring new cities",
   ],
 };
 
